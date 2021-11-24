@@ -1,4 +1,7 @@
 package com.example.contactslistingapp.repository;
 
-public interface ContactPersonRepository {
+import com.example.contactslistingapp.entity.ContactPerson;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface ContactPersonRepository extends MongoRepository<ContactPerson,Long> {
 }
